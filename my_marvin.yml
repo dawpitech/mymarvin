@@ -32,12 +32,14 @@ jenkins:
               - user: "i_dont_know"
             permissions:
               - "Job/Build"
-              - "Job/Workspace"
+              - "View/Read"
           - name: "gorilla"
             description: "Group Obsessively Researching Innovation Linked to Learning and Accomplishment"
             entries:
               - user: "vaugie_g"
             permissions:
+              - "View/Read"
+              - "Job/Build"
               - "Job/Cancel"
               - "Job/Move"
               - "Job/Delete"
@@ -48,7 +50,6 @@ jenkins:
             entries:
               - user: "nasso"
             permissions:
-              - "Job/Workspace"
               - "View/Read"
 
 jobs:
