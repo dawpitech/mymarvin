@@ -61,3 +61,7 @@ jenkins:
 jobs:
   - file: /var/jenkins_home/job_dsl.groovy
 
+security:
+  scriptApproval:
+    approvedScriptHashes:
+      - "SHA512:748e6cbef582329b49d35e0d597b4d81aacf705f3ede5d566240f3627b5a713348189f2a50b83bc084c50751f6cce8b3c9695f619786ce1337ff7b0903421831"
