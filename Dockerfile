@@ -1,6 +1,10 @@
 FROM jenkins/jenkins:lts-jdk17
 
-RUN apt update && apt install -y gcc make
+USER root
+
+RUN apt update && apt install -y build-essential
+
+USER jenkins
 
 COPY --chown=jenkins:jenkins plugins.txt /usr/share/jenkins/ref/plugins.txt
 
