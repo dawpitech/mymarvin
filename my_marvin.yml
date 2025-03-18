@@ -31,6 +31,8 @@ jenkins:
             entries:
               - user: "i_dont_know"
             permissions:
+              - "Overall/Read"
+              - "Job/Read"
               - "Job/Build"
               - "Job/Workspace"
           - name: "gorilla"
@@ -38,6 +40,8 @@ jenkins:
             entries:
               - user: "vaugie_g"
             permissions:
+              - "Overall/Read"
+              - "Job/Read"
               - "Job/Build"
               - "Job/Workspace"
               - "Job/Cancel"
@@ -50,8 +54,10 @@ jenkins:
             entries:
               - user: "nasso"
             permissions:
+              - "Overall/Read"
               - "Job/Read"
               - "Job/Workspace"
 
 jobs:
   - file: /var/jenkins_home/job_dsl.groovy
+
