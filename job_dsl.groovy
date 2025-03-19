@@ -45,8 +45,6 @@ freeStyleJob('Tools/SEED') {
         stringParam('DISPLAY_NAME', '', 'Display name for the job')
     }
     steps {
-        systemGroovyCommand(dsl(seeded_jobs_dsl)) {
-            sandbox(true)
-        }
+        dsl(seeded_jobs_dsl)
     }
 }
