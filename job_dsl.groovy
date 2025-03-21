@@ -1,16 +1,10 @@
 def seeded_jobs_dsl = 
 """freeStyleJob(DISPLAY_NAME) {
-    properties {
-        githubProjectProperty {
-            projectUrlStr(GITHUB_NAME)
-            displayName(DISPLAY_NAME)
-        }
-    }
     wrappers {
         preBuildCleanup()
     }
     scm {
-        github(GITHUB_NAME)
+        github(GITHUB_NAME, null, 'https', 'github.com', null)
     }
     steps {
         shell('make fclean')
